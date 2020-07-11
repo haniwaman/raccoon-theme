@@ -1,0 +1,35 @@
+.p-breadcrumb {
+	ul {
+		display: flex;
+		align-items: center;
+		overflow: auto;
+
+		li {
+			white-space: nowrap;
+			padding: 8px 0;
+		}
+
+		a {
+			text-decoration: none;
+			display: block;
+			transition: all 0.3s ease 0s;
+			color: #666;
+			font-size: 13px;
+
+			&:hover {
+				opacity: $opacity; /* opacity */
+			}
+		}
+	}
+}
+
+.p-breadcrumb__current {
+	color: #666;
+	font-size: 13px;
+}
+
+.p-breadcrumb__bridge {
+	color: #666;
+	font-size: 13px;
+	padding: 0 16px;
+}

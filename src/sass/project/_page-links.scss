@@ -1,0 +1,43 @@
+.p-page-links {
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+
+	.post-page-numbers {
+		display: inline-block;
+		min-width: 36px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		background: map-get($pagination, "background"); /* pagenation background */
+		border: 1px solid map-get($pagination, "border"); /* pagenation border */
+		color: map-get($pagination, "color"); /* pagenation color */
+		margin-right: 12px;
+
+		&.current {
+			color: map-get($pagination, "color-active"); /* pagenation color-active */
+			background: map-get($pagination, "background-active"); /* pagenation background-active */
+			border: 1px solid map-get($pagination, "borde-active"); /* pagenation borde-color-active */
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			color: map-get($pagination, "color-active"); /* pagenation color-active */
+			background: map-get($pagination, "background-active"); /* pagenation background-active */
+			border: 1px solid map-get($pagination, "border-active"); /* pagenation border-color-active */
+			opacity: 1;
+		}
+	}
+}

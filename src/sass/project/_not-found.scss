@@ -1,0 +1,23 @@
+.p-not-found {
+	margin-top: 52px;
+	background: #fff;
+	border: 1px solid #eee;
+	margin-bottom: 48px;
+	padding: 24px $pd-entry-pc 42px;
+	text-align: center;
+}
+
+.p-not-found__body {
+	text-align: center;
+	margin-bottom: 36px;
+
+	p {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.p-not-found__link {
+	text-align: center;
+}

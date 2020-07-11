@@ -1,0 +1,290 @@
+.p-comments {
+}
+
+.p-comments__title {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 42px 0 24px;
+}
+
+.p-comments__list {
+	margin-bottom: 32px;
+}
+
+.p-comments__nav {
+	margin-top: 32px;
+}
+
+.p-comments__form {
+	margin-top: 60px;
+}
+
+.comment-content {
+	h1 {
+		font-size: 28px;
+		margin-top: 3em;
+		margin-bottom: 1em;
+		line-height: 1.2;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-top: 3em;
+		margin-bottom: 1em;
+		line-height: 1.2;
+	}
+
+	h3 {
+		font-size: 20px;
+		margin-top: 3em;
+		margin-bottom: 1em;
+		line-height: 1.4;
+	}
+
+	h4 {
+		font-size: 18px;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+	}
+
+	h5 {
+		font-size: 16px;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+	}
+
+	h6 {
+		font-size: 16px;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		+ p {
+			margin-top: 0;
+		}
+	}
+
+	p {
+		line-height: 1.6;
+		margin-top: 1.2em;
+	}
+
+	ul {
+		list-style-type: disc;
+		padding-left: 20px;
+		margin-bottom: 1em;
+	}
+
+	ol {
+		list-style-type: decimal;
+		padding-left: 20px;
+		margin-bottom: 1em;
+	}
+
+	li {
+		margin-top: 0.4em;
+		margin-bottom: 0.4em;
+		line-height: 1.6;
+	}
+
+	blockquote {
+		background: #eee;
+		padding: 1em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+
+		> :first-child {
+			margin-top: 0;
+		}
+
+		> :last-child {
+			margin-bottom: 0;
+		}
+
+		cite {
+		}
+	}
+
+	q {
+		background: #eee;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 0.2em;
+		padding-right: 0.2em;
+	}
+
+	strong,
+	em,
+	b {
+		font-weight: 700;
+	}
+
+	a {
+		text-decoration: underline;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+	}
+
+	img {
+		vertical-align: middle;
+	}
+
+	dl {
+		margin-top: 1em;
+	}
+
+	dt {
+		font-weight: 700;
+		margin-top: 0.8em;
+		margin-bottom: 4px;
+	}
+
+	dd {
+	}
+
+	var,
+	code,
+	kbd {
+		color: map-get($code, "color"); /* code-txt */
+		background: map-get($code, "background"); /* code-bg */
+		display: inline-block;
+		padding-left: 0.2em;
+		padding-right: 0.2em;
+		vertical-align: baseline;
+		font-style: normal;
+	}
+
+	pre {
+		white-space: pre;
+		overflow: auto;
+		margin-top: 1.2em;
+		padding: 1em;
+
+		code {
+			background: $pre-code-background; /* pre-code-bg */
+			color: #fff;
+			padding: 12px;
+			position: relative;
+			margin: -1em;
+			overflow: auto;
+		}
+	}
+}
+
+.comment-respond {
+	.required {
+		color: $form-color-required; /* cr-required */
+		vertical-align: middle;
+	}
+
+	[type="text"],
+	[type="email"],
+	[type="tel"],
+	[type="url"],
+	[type="email"],
+	textarea {
+		vertical-align: top;
+		width: 100%;
+	}
+
+	textarea {
+		width: 100%;
+		height: 180px;
+	}
+}
+
+.comment-reply-title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.logged-in-as {
+	a {
+		color: #666;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+	}
+}
+
+.comment-notes {
+	color: #666;
+}
+
+.comment-form {
+	label {
+		display: block;
+		margin: 10px 0 4px;
+	}
+
+	.form-submit {
+		margin-top: 24px;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity;
+		}
+	}
+}
+
+#wp-comment-cookies-consent {
+	+ label {
+		display: inline-block;
+		position: relative;
+		padding: 0 0 0 1.4em;
+		margin: 24px 0 0 0;
+		cursor: pointer;
+		transition: all 1s ease 0s;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background: #fff;
+			border: 1px solid $form-border-color; /* form border */
+			border-radius: 2px;
+			width: 1em;
+			height: 1em;
+			display: block;
+		}
+
+		&::after {
+			opacity: 0;
+			transition: opacity 0.3s ease 0s;
+		}
+	}
+
+	&:checked + label {
+		&::after {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%) rotate(-45deg);
+			width: 1em;
+			height: 0.6em;
+			margin-top: -0.2em;
+			display: block;
+			border-left: 4px solid $form-checkbox-color; /* form checkbox */
+			border-bottom: 4px solid $form-checkbox-color; /* form checkbox */
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.p-contact {
+}
+
+.p-contact__items {
+}
+
+.p-contact__item {
+	@include mq-up("tab") {
+		display: flex;
+	}
+
+	dt,
+	dd {
+		padding: 0;
+
+		@include mq-up("tab") {
+			padding: 16px 12px;
+		}
+	}
+
+	dt {
+		width: 100%;
+		margin-bottom: 6px;
+
+		@include mq-up("tab") {
+			width: 150px;
+			margin-bottom: 0;
+		}
+	}
+
+	dd {
+		width: 100%;
+		margin-bottom: 20px;
+
+		@include mq-up("tab") {
+			width: calc(100% - 150px);
+			margin-bottom: 0;
+		}
+	}
+
+	select {
+		background-image: url(../img/arrow-select.svg);
+	}
+}
+
+.p-contact__submit {
+	text-align: center;
+
+	[type="submit"] {
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity;
+		}
+	}
+}

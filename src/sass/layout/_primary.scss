@@ -1,0 +1,8 @@
+.l-primary {
+	width: 100%;
+
+	@include mq-up("tab") {
+		width: ($layout-width-main / $layout-width-container) * 100%;
+		margin-bottom: 0;
+	}
+}

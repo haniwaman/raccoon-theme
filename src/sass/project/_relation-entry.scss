@@ -1,0 +1,51 @@
+.p-relation-entry {
+}
+
+.p-relation-entry__title {
+	line-height: 1.4;
+
+	a {
+		text-decoration: none;
+		font-size: 14px;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+	}
+}
+
+.p-relation-entry__body {
+	padding: 4px;
+}
+
+.p-relation-entry__img {
+}
+
+.p-relation-entry-img-cover {
+	position: relative;
+	overflow: hidden;
+	padding-top: $thumbnail-height / $thumbnail-width * 100%;
+
+	a {
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			font-family: "object-fit: cover;";
+		}
+	}
+}

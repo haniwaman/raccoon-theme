@@ -1,0 +1,8 @@
+.p-entries {
+	margin-top: 32px;
+
+	&.p-entries--square {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

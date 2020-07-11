@@ -1,0 +1,174 @@
+.p-page-content {
+	overflow: hidden;
+
+	> :first-child {
+		margin-top: 0;
+	}
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-top: 3em;
+		margin-bottom: 1em;
+		line-height: 1.2;
+	}
+
+	h3 {
+		font-size: 20px;
+		margin-top: 3em;
+		margin-bottom: 1em;
+		line-height: 1.4;
+	}
+
+	h4 {
+		font-size: 18px;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+	}
+
+	h5 {
+		font-size: 16px;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+	}
+
+	h6 {
+		font-size: 16px;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+	}
+
+	p {
+		line-height: 1.8;
+		margin: 2em 0 0.4em;
+	}
+
+	ul {
+		list-style-type: disc;
+		padding-left: 20px;
+		margin-bottom: 1em;
+	}
+
+	ol {
+		list-style-type: decimal;
+		padding-left: 20px;
+		margin-bottom: 1em;
+	}
+
+	li {
+		margin-top: 0.6em;
+		margin-bottom: 0.6em;
+		line-height: 1.6;
+	}
+
+	address {
+	}
+
+	cite {
+	}
+
+	blockquote {
+		background: map-get($blockquote, "background");
+		color: map-get($blockquote, "color");
+		padding: 1em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		line-height: 1.6;
+
+		> :first-child {
+			margin-top: 0;
+		}
+
+		> :last-child {
+			margin-bottom: 0;
+		}
+
+		> cite {
+		}
+	}
+
+	q {
+		background: map-get($blockquote, "background");
+		box-shadow: 0 0 0 1px map-get($blockquote, "background");
+		color: map-get($blockquote, "color");
+		vertical-align: middle;
+		padding: 0 0.2em;
+	}
+
+	th {
+		background: $table-th-background; /* table border */
+	}
+
+	strong,
+	em,
+	b {
+		font-weight: 700;
+	}
+
+	a {
+		text-decoration: underline;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+	}
+
+	img {
+		vertical-align: middle;
+	}
+
+	dl {
+		margin-top: 1em;
+	}
+
+	dt {
+		font-weight: 700;
+		margin-top: 0.8em;
+		margin-bottom: 4px;
+	}
+
+	dd {
+	}
+
+	var,
+	code,
+	kbd {
+		background: map-get($code, "background");
+		box-shadow: 0 0 0 1px map-get($code, "background");
+		color: map-get($code, "color");
+		padding: 0 0.2em;
+		margin: 0 0.1em;
+		vertical-align: baseline;
+		font-style: normal;
+		font-weight: 700;
+		font-family: $font-family-code;
+	}
+
+	pre {
+		white-space: pre;
+		overflow: auto;
+		margin-top: 1.2em;
+		padding: 1em;
+		background: map-get($pre, "background");
+		tab-size: 2;
+
+		code {
+			background: map-get($source, "background");
+			color: map-get($source, "color");
+			padding: 12px;
+			position: relative;
+			margin: -1em;
+			display: block;
+			font-family: $font-family-code;
+			font-weight: 400;
+			overflow: auto;
+		}
+	}
+}

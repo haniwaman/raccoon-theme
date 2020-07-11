@@ -1,0 +1,27 @@
+.p-page-tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border-top: 1px solid #eee;
+	padding-top: 12px;
+	margin-top: 32px;
+}
+
+.p-page-tags__link {
+	font-size: 12px;
+	margin: 0 6px 6px 0;
+
+	a {
+		background: map-get($tag-cloud, "background");
+		border-radius: 2px;
+		color: map-get($tag-cloud, "color");
+		display: block;
+		padding: 2px 6px;
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity;
+		}
+	}
+}

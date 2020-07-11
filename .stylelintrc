@@ -1,0 +1,19 @@
+{
+	"extends": [
+		"stylelint-config-wordpress/scss"
+	],
+	"rules": {
+		"no-descending-specificity": null,
+		"max-line-length": [
+			300,
+			{
+				"ignore": "non-comments",
+				"ignorePattern": [
+					"/(https?://[0-9,a-z]*.*)|(^description\\:.+)|(^tags\\:.+)/i"
+				]
+			}
+		],
+		"selector-class-pattern": null,
+		"at-rule-empty-line-before": null
+	}
+}

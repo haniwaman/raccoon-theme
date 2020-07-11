@@ -1,0 +1,253 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_attr_e;_n;esc_html__;esc_attr__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: sass\n"
+"X-Poedit-SearchPathExcluded-2: .vscode\n"
+"X-Poedit-SearchPathExcluded-3: js\n"
+"X-Poedit-SearchPathExcluded-4: img\n"
+"X-Poedit-SearchPathExcluded-5: css\n"
+
+#: 404.php:26
+msgid "Contents is not found."
+msgstr ""
+
+#: 404.php:33
+msgid "Sorry. Contents is not found."
+msgstr ""
+
+#: 404.php:35
+msgid "Back to Home"
+msgstr ""
+
+#: attachment.php:48
+msgid "URL of this attachment"
+msgstr ""
+
+#: comments.php:14
+msgid "Comments"
+msgstr ""
+
+#: comments.php:33
+msgid "Prev Comments"
+msgstr ""
+
+#: comments.php:34
+msgid "Next Comments"
+msgstr ""
+
+#: functions.php:113 inc/customizer/color.php:70
+msgid "Header"
+msgstr ""
+
+#: functions.php:114 inc/customizer/color.php:125
+msgid "Footer"
+msgstr ""
+
+#: functions.php:130
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:140
+msgid "Sticky"
+msgstr ""
+
+#: functions.php:150
+msgid "Smartphone Menu"
+msgstr ""
+
+#: functions.php:192 functions.php:234
+msgid "Blog"
+msgstr ""
+
+#: functions.php:194 functions.php:298 template/content/single.php:86
+#: template/content/single.php:105
+msgid "..."
+msgstr ""
+
+#: functions.php:215 inc/breadcrumb.php:90
+msgid " Search Results"
+msgstr ""
+
+#: functions.php:225 inc/breadcrumb.php:136
+msgid "Year"
+msgstr ""
+
+#: functions.php:228 inc/breadcrumb.php:139
+msgid "Month"
+msgstr ""
+
+#: functions.php:231 inc/breadcrumb.php:142
+msgid "Day"
+msgstr ""
+
+#: functions.php:248
+msgid "This content is password protected. Enter your password below to view it."
+msgstr ""
+
+#: functions.php:250
+msgid "Enter Password"
+msgstr ""
+
+#: inc/breadcrumb.php:18
+msgid "Home"
+msgstr ""
+
+#: inc/customizer/color.php:22
+msgid "Color"
+msgstr ""
+
+#: inc/customizer/color.php:30 inc/customizer/layout.php:27
+msgid "Site"
+msgstr ""
+
+#: inc/customizer/color.php:43 inc/customizer/color.php:83
+#: inc/customizer/color.php:138
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/color.php:58 inc/customizer/color.php:98
+#: inc/customizer/color.php:153
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer/color.php:113
+msgid "Logo Color"
+msgstr ""
+
+#: inc/customizer/color.php:165 inc/customizer/parts.php:29
+msgid "Contents"
+msgstr ""
+
+#: inc/customizer/color.php:178
+msgid "Link"
+msgstr ""
+
+#: inc/customizer/layout.php:18
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/layout.php:45
+msgid "Select Column"
+msgstr ""
+
+#: inc/customizer/layout.php:51
+msgid "One Column"
+msgstr ""
+
+#: inc/customizer/layout.php:52
+msgid "Two Column(Side Right)"
+msgstr ""
+
+#: inc/customizer/layout.php:53
+msgid "Two Column(Side Left)"
+msgstr ""
+
+#: inc/customizer/layout.php:63
+msgid "Archive"
+msgstr ""
+
+#: inc/customizer/layout.php:81
+msgid "Archive Layout"
+msgstr ""
+
+#: inc/customizer/layout.php:87
+msgid "Horizon"
+msgstr ""
+
+#: inc/customizer/layout.php:88
+msgid "Vertical"
+msgstr ""
+
+#: inc/customizer/layout.php:98
+msgid "Article"
+msgstr ""
+
+#: inc/customizer/parts.php:21
+msgid "Single"
+msgstr ""
+
+#: inc/customizer/parts.php:46
+msgid "Heading Pattern"
+msgstr ""
+
+#: inc/customizer/parts.php:52
+msgid "Default"
+msgstr ""
+
+#: inc/customizer/parts.php:53
+msgid "Pattern01"
+msgstr ""
+
+#: inc/customizer/parts.php:63
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer/parts.php:82
+msgid "Enable to Display"
+msgstr ""
+
+#: inc/customizer/performance.php:21
+msgid "Performance"
+msgstr ""
+
+#: inc/customizer/performance.php:29
+msgid "CSS Inline"
+msgstr ""
+
+#: inc/customizer/performance.php:47
+msgid "Enable to CSS Inline"
+msgstr ""
+
+#: parts/relation.php:11
+msgid "Relation Posts"
+msgstr ""
+
+#: parts/relation.php:62
+msgid "More Relation Posts"
+msgstr ""
+
+#: searchform.php:10
+msgid "Search:"
+msgstr ""
+
+#: searchform.php:11
+msgid "Site Search"
+msgstr ""
+
+#: searchform.php:12
+msgid "Search"
+msgstr ""
+
+#: template/content/single.php:74
+msgid "Next Post"
+msgstr ""
+
+#: template/content/single.php:93
+msgid "Prev Post"
+msgstr ""
+
+#: template/footer/content.php:46
+msgid "Copyright"
+msgstr ""
+
+#: template/footer/content.php:46
+msgid "All Rights Reserved."
+msgstr ""
+
+#: template/header/content.php:8
+msgid "Skip to content"
+msgstr ""

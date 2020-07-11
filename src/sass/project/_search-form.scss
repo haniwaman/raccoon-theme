@@ -1,0 +1,27 @@
+.p-search-form {
+	position: relative;
+
+	.search-field {
+		width: 100%;
+		height: 42px;
+		line-height: 42px;
+	}
+
+	.search-submit {
+		position: absolute;
+		right: 1px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 42px;
+		line-height: 42px;
+		padding: 0 10px;
+		font-size: 14px;
+		font-weight: 700;
+		min-width: 42px;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity;
+		}
+	}
+}

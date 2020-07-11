@@ -1,0 +1,23 @@
+.p-header-logo {
+	a {
+		transition: all 0.3s ease 0s;
+		display: block;
+		text-decoration: none;
+		font-size: 28px;
+		font-weight: 700;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+	}
+
+	img {
+		vertical-align: middle;
+		width: auto;
+		max-height: $header-height-sp;
+
+		@include mq-up("tab") {
+			max-height: $header-height-pc;
+		}
+	}
+}

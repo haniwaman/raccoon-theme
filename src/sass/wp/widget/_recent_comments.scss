@@ -1,0 +1,17 @@
+.widget_recent_comments {
+}
+
+#recentcomments {
+	.recentcomments {
+		color: $color-text--thin;
+
+		a {
+			text-decoration: underline;
+			color: $color-text;
+
+			&:hover {
+				opacity: $opacity; /* opacity */
+			}
+		}
+	}
+}

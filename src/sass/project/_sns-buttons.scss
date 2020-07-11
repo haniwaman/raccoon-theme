@@ -1,0 +1,85 @@
+.p-sns-buttons {
+	margin-top: 6px;
+	margin-bottom: 6px;
+
+	@include mq-up("tab") {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	li {
+		width: calc(50% - 12px * 1 / 2);
+		margin: 6px 12px 6px 0;
+		font-size: 13px;
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+
+		@include mq-up("tab") {
+			width: calc((100% / 6) - 12px * 5 / 6);
+			margin: 3px 12px 3px 0;
+
+			&:nth-child(2n) {
+				margin-right: 12px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		i {
+			margin-right: 4px;
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			padding: 6px 12px;
+			display: block;
+			text-align: center;
+			background: #666;
+			border-radius: 2px;
+			box-shadow: 0 0 3px 0 rgba(#000, 0.16);
+			transition: all 0.3s ease 0s;
+			font-weight: 700;
+			white-space: nowrap;
+
+			&:hover {
+				opacity: $opacity; /* opacity */
+			}
+
+			&.m-twitter {
+				background: map-get($sns-color, "twitter"); /* sns twitter */
+			}
+
+			&.m-facebook {
+				background: map-get($sns-color, "facebook"); /* sns facebook */
+			}
+
+			&.m-hatena {
+				background: map-get($sns-color, "hatena"); /* sns hatena */
+			}
+
+			&.m-line {
+				background: map-get($sns-color, "line"); /* sns line */
+			}
+
+			&.m-pocket {
+				background: map-get($sns-color, "pocket"); /* sns pocket */
+			}
+
+			&.m-rss {
+				background: map-get($sns-color, "rss"); /* sns rss */
+			}
+		}
+	}
+}

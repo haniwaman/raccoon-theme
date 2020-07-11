@@ -1,0 +1,17 @@
+.l-inner {
+	margin: 0 auto;
+	padding: 0 $pd-x-sp;
+	max-width: 100%;
+	width: $layout-width-container;
+	height: inherit;
+
+	@include mq-up("tab") {
+		padding-right: $pd-x-tab;
+		padding-left: $pd-x-tab;
+	}
+
+	@include mq-up("pc") {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}

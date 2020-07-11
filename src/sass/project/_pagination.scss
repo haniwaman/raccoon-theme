@@ -1,0 +1,63 @@
+.p-pagination {
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+
+	a {
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			color: map-get($pagination, "color-active"); /* pagenation color-active */
+			background: map-get($pagination, "background-active"); /* pagenation background-active */
+			border: 1px solid map-get($pagination, "border-active"); /* pagenation border-active */
+		}
+
+		&.next,
+		&.prev {
+			font-size: 12px;
+			background: map-get($pagination, "background"); /* pagenation background */
+			border: 1px solid map-get($pagination, "border"); /* pagenation border */
+
+			&:hover {
+				color: map-get($pagination, "color-active"); /* pagenation color-active */
+				background: map-get($pagination, "background-active"); /* pagenation background-active */
+				border: 1px solid map-get($pagination, "border-active"); /* pagenation border-active */
+			}
+		}
+	}
+
+	.page-numbers {
+		border: 1px solid map-get($pagination, "border"); /* pagenation border */
+		background: map-get($pagination, "background"); /* pagenation background */
+		text-align: center;
+		color: map-get($pagination, "color"); /* pagenation color */
+		text-decoration: none;
+		margin-right: 8px;
+
+		min-width: 38px;
+		height: 38px;
+		line-height: 38px;
+
+		@include mq-up("tab") {
+			min-width: 42px;
+			height: 42px;
+			line-height: 42px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.current {
+			color: map-get($pagination, "color-active"); /* pagenation color-active */
+			background: map-get($pagination, "background-active"); /* pagenation background-active */
+			border: 1px solid map-get($pagination, "border-active"); /* pagenation border-active */
+		}
+
+		&.dots,
+		&.next,
+		&.prev {
+			border: none;
+		}
+	}
+}

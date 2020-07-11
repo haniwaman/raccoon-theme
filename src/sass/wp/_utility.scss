@@ -1,0 +1,155 @@
+.wp-caption {
+	max-width: 100%;
+	text-align: center;
+	margin: 1.2em auto 0;
+
+	a {
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+	}
+}
+
+.wp-caption-text {
+	padding: 4px;
+	font-size: 13px;
+	text-align: left;
+}
+
+.post_password {
+	position: relative;
+	margin-top: 1.2em;
+
+	.post_password-field {
+		height: 42px;
+		line-height: 42px;
+		width: 100%;
+	}
+
+	.post_password-submit {
+		@extend %button;
+		position: absolute;
+		right: 1px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 40px;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: $opacity;
+		}
+	}
+}
+
+.alignleft {
+	float: left;
+	margin: 8px 8px 8px 0;
+	max-width: 48%;
+}
+
+.alignright {
+	float: right;
+	margin: 8px 0 8px 8px;
+	max-width: 48%;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sticky {
+	position: relative;
+
+	&::before {
+		content: "PICK UP";
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $pickup-color; /* sticky color */
+		background: $pickup-background; /* sticky background */
+		font-size: 12px;
+		padding: 4px 8px;
+		z-index: 2;
+	}
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+.bypostauthor {
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+
+	@if $is-focus == true {
+		&:focus {
+			background-color: #f1f1f1;
+			border-radius: 3px;
+			box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+			clip: auto !important;
+			-webkit-clip-path: none;
+			clip-path: none;
+			color: #21759b;
+			display: block;
+			font-size: 14px;
+			font-size: 8.75px;
+			font-weight: 700;
+			height: auto;
+			right: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	}
+}
+
+.skip-link {
+	left: -9999px;
+	top: 25px;
+	z-index: 999999999;
+	text-decoration: underline;
+
+	@if $is-focus == true {
+		&:focus {
+			display: block;
+			left: 6px;
+			top: 7px;
+			font-size: 14px;
+			font-weight: 600;
+			text-decoration: none;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			z-index: 100000;
+			right: auto;
+		}
+	}
+}
+
+.wp-block-button__link {
+	text-decoration: none !important;
+}

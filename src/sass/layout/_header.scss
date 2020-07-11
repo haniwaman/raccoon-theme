@@ -1,0 +1,48 @@
+.l-header {
+	width: 100%;
+	height: $header-height-sp;
+	z-index: map-get($layer, "header");
+	background: $header-background;
+
+	@include mq-up("tab") {
+		height: $header-height-pc;
+	}
+
+	&.m-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+}
+
+.l-header__inner {
+	display: flex;
+	flex-wrap: wrap;
+	height: inherit;
+	align-items: center;
+}
+
+.l-header__logo {
+	padding-right: 0;
+	margin-right: auto;
+
+	@include mq-up("tab") {
+		padding-right: 12px;
+	}
+}
+
+.l-header__global {
+	display: none;
+
+	@include mq-up("tab") {
+		display: block;
+	}
+}
+
+.l-header__drawer {
+	display: block;
+
+	@include mq-up("tab") {
+		display: none;
+	}
+}

@@ -1,0 +1,56 @@
+#toc_container {
+	background: #fff;
+	border: solid 2px $color-key;
+	border-radius: 3px;
+	margin: 1.5em 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 1em;
+
+	.toc_title {
+		background: $color-key;
+		border: none;
+		color: #fff;
+		font-size: 1.12em;
+		font-weight: 700;
+		letter-spacing: 0.3em;
+		margin: 0 !important;
+		padding: 8px 24px !important;
+		text-align: center;
+
+		&::before {
+			content: "\f00b";
+			font-family: $font-family-awesome;
+			font-weight: 900;
+			margin: 0 8px 0 0;
+		}
+	}
+
+	.toc_list {
+		font-weight: 700;
+		list-style: none;
+		margin: 24px 20px !important;
+		padding: 0;
+
+		li {
+			margin: 0 0 12px;
+			padding: 0;
+
+			a {
+				color: #383838;
+				text-decoration: none;
+				transition: all 0.3s ease 0s;
+			}
+
+			> ul {
+				list-style: none;
+				margin: 10px 0 16px;
+				padding: 0 0 0 20px;
+
+				li {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}

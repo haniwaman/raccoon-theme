@@ -1,0 +1,24 @@
+.p-comments-nav {
+	ul {
+		display: flex;
+	}
+}
+
+.p-comments-nav__prev,
+.p-comments-nav__next {
+	margin-right: auto;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	a {
+		transition: all 0.3s ease 0s;
+		text-decoration: none;
+		color: #666;
+
+		&:hover {
+			opacity: $opacity; /* opacity */
+		}
+	}
+}

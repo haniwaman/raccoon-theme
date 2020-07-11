@@ -1,0 +1,19 @@
+.l-page {
+	background: #fff;
+	border: 1px solid #eee;
+	margin-bottom: 32px;
+	padding: 24px $pd-entry-sp 42px;
+
+	@include mq-up("tab") {
+		padding-right: $pd-entry-pc;
+		padding-left: $pd-entry-pc;
+	}
+}
+
+.l-page__header {
+	margin-bottom: 8px;
+}
+
+.l-page__body {
+	margin-top: 32px;
+}

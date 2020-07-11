@@ -1,0 +1,129 @@
+// ベース色
+$color-key: #efa336;
+$color-accent: #e65100;
+$color-background: #fff;
+$color-text: #424242;
+$color-text--thin: #9e9e9e;
+
+// 透過度
+$opacity: 0.6;
+
+// ヘッダー
+$header-background: #fff;
+$header-background-sub: #9e9e9e;
+$header-color-sub: #fff;
+
+// フッター
+$footer-background: #757575;
+$footer-color: #fff;
+
+// フォーム
+$form-border-color: #bdbdbd;
+$form-border-color-foucs: #9e9e9e;
+$form-color-required: #e57373; // 必須
+
+// チェックボックス
+$form-checkbox-color: #616161;
+
+// ラジオボタン
+$form-radio-color: #616161;
+
+// テーブル
+$table-border-color: #bdbdbd;
+$table-background: #fff;
+$table-background-active: #e0e0e0;
+$table-th-background: #eee;
+$table-th-color: $color-text;
+
+// ボタン
+$button-background: #9e9e9e;
+$button-color: #fff;
+
+// マーカー
+$marker-background: #e0e0e0;
+
+// ピックアップ
+$pickup-background: #e57373;
+$pickup-color: #fff;
+
+// SNS
+$sns-color: (
+	"twitter": #1da1f2,
+	"facebook": #3b5998,
+	"hatena": #018fde,
+	"line": #00b902,
+	"pocket": #ef4156,
+	"feedly": #6cc654,
+	"rss": #ea781a
+);
+
+// ウィジェット見出し
+$widget: (
+	"background": #9e9e9e,
+	"color": #fff
+);
+
+// タグクラウド
+$tag-cloud: (
+	"background": #eee,
+	"color": #333
+);
+
+// ページネーション
+$pagination: (
+	"background": #eee,
+	"color": #333,
+	"border": #eee,
+	"background-active": #9e9e9e,
+	"color-active": #fff,
+	"border-active": #9e9e9e
+);
+
+// floating
+$floating: (
+	"background": #757575,
+	"color": #fff
+);
+
+// リンク
+$link: (
+	"color": #9e9e9e
+);
+
+// blockquote
+$blockquote: (
+	"background": #eee,
+	"color": #333
+);
+
+// code
+$code: (
+	"background": #fee,
+	"color": #444
+);
+
+// pre code
+$pre-code-background: #2d2d2d;
+
+// pre
+$pre: (
+	"background": rgba(#efefef, 0.3)
+);
+
+// source code
+$source: (
+	"background": #2d2d2d,
+	"color": #fff
+);
+
+$is-focus: true;
+
+// form border
+$form-border-color: #bdbdbd;
+$form-border-color--focus: #9e9e9e;
+
+// drawer
+$drawer-bar-color: #757575;
+$drawer-text-color: #757575;
+
+$color-relation-head: $color-text;

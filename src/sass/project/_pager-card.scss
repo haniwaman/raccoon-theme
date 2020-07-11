@@ -1,0 +1,32 @@
+.p-pager-card {
+	display: flex;
+	background: #fff;
+	border: 1px solid #eee;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+
+	&:hover {
+		opacity: $opacity; /* opacity */
+	}
+
+	&.p-pager-card--right {
+		flex-direction: row-reverse;
+	}
+}
+
+.p-pager-card__img {
+	width: 80px;
+
+	img {
+		width: 80px;
+	}
+}
+
+.p-pager-card__body {
+	width: calc(100% - 80px);
+	padding: 12px;
+}
+
+.p-pager-card__title {
+	font-size: 14px;
+}

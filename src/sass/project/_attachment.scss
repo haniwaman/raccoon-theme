@@ -1,0 +1,23 @@
+.p-attachment {
+}
+
+.p-attachment__img {
+	text-align: center;
+	margin-top: 12px;
+}
+
+.p-attachment__caption {
+	text-align: center;
+	color: $color-text--thin;
+	font-size: 12px;
+	margin-top: 8px;
+}
+
+.p-attachment__btn {
+	text-align: center;
+	margin-top: 32px;
+
+	.c-button {
+		text-decoration: none;
+	}
+}

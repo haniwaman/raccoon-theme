@@ -1,0 +1,11 @@
+/*
+!/raccoon/
+!/src/
+!.editorconfig
+!.eslintrc
+!.prettierrc
+!.stylelintrc
+!gulpfile.js
+!package.json
+!package-lock.json
+!.gitignore
