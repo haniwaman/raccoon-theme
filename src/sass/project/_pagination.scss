@@ -1,5 +1,4 @@
 .p-pagination {
-	margin-top: 32px;
 	display: flex;
 	justify-content: center;
 
@@ -7,30 +6,31 @@
 		transition: all 0.3s ease 0s;
 
 		&:hover {
-			color: map-get($pagination, "color-active"); /* pagenation color-active */
-			background: map-get($pagination, "background-active"); /* pagenation background-active */
-			border: 1px solid map-get($pagination, "border-active"); /* pagenation border-active */
+			color: map-get($pagination, "color-active");
+			background: map-get($pagination, "background-active");
+			border: 1px solid map-get($pagination, "border-active");
 		}
+	}
 
-		&.next,
-		&.prev {
-			font-size: 12px;
-			background: map-get($pagination, "background"); /* pagenation background */
-			border: 1px solid map-get($pagination, "border"); /* pagenation border */
+	.next,
+	.prev {
+		font-size: 12px;
+		background: map-get($pagination, "background");
+		border: 1px solid map-get($pagination, "border");
+		transition: all 0.3s ease 0s;
 
-			&:hover {
-				color: map-get($pagination, "color-active"); /* pagenation color-active */
-				background: map-get($pagination, "background-active"); /* pagenation background-active */
-				border: 1px solid map-get($pagination, "border-active"); /* pagenation border-active */
-			}
+		&:hover {
+			color: map-get($pagination, "color-active");
+			background: map-get($pagination, "background-active");
+			border: 1px solid map-get($pagination, "border-active");
 		}
 	}
 
 	.page-numbers {
-		border: 1px solid map-get($pagination, "border"); /* pagenation border */
-		background: map-get($pagination, "background"); /* pagenation background */
+		border: 1px solid map-get($pagination, "border");
+		background: map-get($pagination, "background");
 		text-align: center;
-		color: map-get($pagination, "color"); /* pagenation color */
+		color: map-get($pagination, "color");
 		text-decoration: none;
 		margin-right: 8px;
 
@@ -49,9 +49,9 @@
 		}
 
 		&.current {
-			color: map-get($pagination, "color-active"); /* pagenation color-active */
-			background: map-get($pagination, "background-active"); /* pagenation background-active */
-			border: 1px solid map-get($pagination, "border-active"); /* pagenation border-active */
+			color: map-get($pagination, "color-active");
+			background: map-get($pagination, "background-active");
+			border: 1px solid map-get($pagination, "border-active");
 		}
 
 		&.dots,

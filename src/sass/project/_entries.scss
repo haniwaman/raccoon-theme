@@ -1,8 +1,25 @@
 .p-entries {
-	margin-top: 32px;
-
 	&.p-entries--square {
 		display: flex;
 		flex-wrap: wrap;
+	}
+}
+
+.p-entries__item {
+	margin-bottom: 32px;
+
+	.p-entries--square & {
+		margin-right: 0;
+		margin-bottom: 32px;
+		width: 100%;
+
+		@include mq-up("tab") {
+			margin-right: 32px;
+			width: calc(50% - 32px / 2);
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
 	}
 }

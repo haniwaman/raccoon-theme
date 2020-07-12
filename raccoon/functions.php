@@ -1,6 +1,8 @@
 <?php
 /**
  * Functions
+ *
+ * @package Raccoon
  */
 
 /**
@@ -59,14 +61,14 @@ add_action( 'after_setup_theme', 'raccoon_setup' );
 function raccoon_script() {
 
 	/* Library */
-	wp_enqueue_style( 'raccoon_font-awesome', get_template_directory_uri() . '/lib/font-awesome/css/all.min.css', array(), '5.13.1', 'all' );
-	wp_enqueue_script( 'raccoon_object-fit', get_template_directory_uri() . '/lib/object-fit-images/ofi.min.js', array(), '3.2.4', true );
+	wp_enqueue_style( 'raccoon_font-awesome', get_template_directory_uri() . '/src/lib/font-awesome/css/all.min.css', array(), '5.13.1', 'all' );
+	wp_enqueue_script( 'raccoon_object-fit', get_template_directory_uri() . '/src/lib/object-fit-images/ofi.min.js', array(), '3.2.4', true );
 
 	/* CSS */
 	if ( ! get_theme_mod( 'raccoon_performance_inline_check' ) ) {
-		wp_enqueue_style( 'raccoon_header', get_template_directory_uri() . '/src/css/header.min.css', array(), '1.0.1', 'all' );
+		wp_enqueue_style( 'raccoon_header', get_template_directory_uri() . '/src/css/header.min.css', array(), '1.3', 'all' );
 	}
-	wp_enqueue_style( 'raccoon_main', get_template_directory_uri() . '/src/css/style.css', array(), '1.0.1', 'all' );
+	wp_enqueue_style( 'raccoon_main', get_template_directory_uri() . '/src/css/style.css', array(), '1.3', 'all' );
 	wp_enqueue_style( 'raccoon_default', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ), 'all' );
 
 	/* JavaScript */
@@ -163,7 +165,7 @@ function raccoon_widget_init() {
 	register_sidebar(
 		array(
 			'name'          => __( 'Smartphone Menu', 'raccoon' ),
-			'id'            => 'spmenu',
+			'id'            => 'sp-menu',
 			'before_widget' => '<div id="%1$s" class="p-widget %2$s">',
 			'after_widget'  => '</div><!-- /p-widget -->',
 			'before_title'  => '<div class="p-widget__title">',
@@ -227,7 +229,7 @@ function raccoon_archive_title( $title ) {
 	} elseif ( is_tag() ) { /* Tag */
 		$title = '' . single_tag_title( '', false ) . '';
 	} elseif ( is_search() ) { /* Search */
-		$title = '"' . esc_html( get_query_var( 's' ) ) . '"' . esc_html__( ' Search Results', 'raccoon' );
+		$title = '"' . esc_html( get_query_var( 's' ) ) . '"' . esc_html__( ' of Search Results', 'raccoon' );
 	} elseif ( is_post_type_archive() ) { /* PostType */
 		$title = '' . post_type_archive_title( '', false ) . '';
 	} elseif ( is_tax() ) { /* Term */
@@ -325,6 +327,7 @@ add_filter( 'excerpt_more', 'raccoon_excerpt_more' );
  * Add WP Admin Customizer
  */
 require_once get_template_directory() . '/inc/customizer/base.php';
+require_once get_template_directory() . '/inc/customizer/color.php';
 require_once get_template_directory() . '/inc/customizer/parts.php';
 require_once get_template_directory() . '/inc/customizer/layout.php';
 require_once get_template_directory() . '/inc/customizer/performance.php';

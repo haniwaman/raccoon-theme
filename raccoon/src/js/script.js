@@ -53,25 +53,53 @@ jQuery(function() {
 		}
 	});
 
-	/* widget_nav_menu */
-	jQuery(".widget_nav_menu .menu > .menu-item-has-children").append("<span>");
-	jQuery(".menu-item-has-children span").on("click", function() {
+	/* Global Navigation */
+	jQuery(".p-header-nav > ul > li.menu-item-has-children").on("hover", function() {
+		console.log("ホバーされました！");
+		jQuery(".p-header-nav > ul > li.menu-item-has-children > a + .sub-menu").removeClass("is-show");
 		jQuery(this)
-			.parent(".menu-item-has-children")
-			.toggleClass("m-open");
+			.children(".sub-menu")
+			.addClass("is-show");
 	});
 
-	/* widget_nav_menu fixed */
-	jQuery(".drawer-list > .menu-item-has-children").append("<span>");
-	jQuery(".menu-item-has-children span").on("click", function() {
+	jQuery(".p-header-nav > ul > li > a").on("focus", function() {
+		jQuery(".p-header-nav > ul > li.menu-item-has-children > a + .sub-menu").removeClass("is-show");
+	});
+
+	jQuery(".p-header-nav > ul > li.menu-item-has-children > a").on("focus", function() {
+		console.log("フォーカスされました！");
 		jQuery(this)
-			.parent(".menu-item-has-children")
+			.next(".sub-menu")
+			.addClass("is-show");
+	});
+
+	/* Drawer Nav */
+	jQuery("<button>")
+		.appendTo(".p-drawer-nav > ul > li.menu-item-has-children > a")
+		.addClass("js-toggle-child-item");
+	jQuery(".js-toggle-child-item").on("click", function(event) {
+		event.preventDefault();
+		jQuery(this)
+			.closest(".menu-item-has-children")
 			.toggleClass("m-open");
+		console.log("クリックされました！");
+	});
+
+	/* Widget Nav */
+	jQuery("<button>")
+		.appendTo(".widget_nav_menu .menu > li.menu-item-has-children > a")
+		.addClass("js-toggle-child-item");
+	jQuery(".js-toggle-child-item").on("click", function(event) {
+		event.preventDefault();
+		jQuery(this)
+			.closest(".menu-item-has-children")
+			.toggleClass("m-open");
+		console.log("クリックされました！");
 	});
 
 	// Drawer
-	jQuery(".js-drawer").on("click", function(e) {
-		e.preventDefault();
+	jQuery(".js-drawer").on("click", function(event) {
+		event.preventDefault();
 		let targetClass = jQuery(this).attr("data-target");
 		if (jQuery("." + targetClass).hasClass("is-checked")) {
 			jQuery("." + targetClass).removeClass("is-checked");
@@ -82,13 +110,8 @@ jQuery(function() {
 		return false;
 	});
 
-	jQuery(".js-drawer-close a").on("click", function(e) {
-		e.preventDefault();
-		jQuery(this)
-			.parents(".js-drawer-close")
-			.parent()
-			.toggleClass("is-checked");
-		return false;
+	jQuery(document).on("click", function() {
+		jQuery(".p-header-nav > ul > li.menu-item-has-children > a + .sub-menu").removeClass("is-show");
 	});
 
 	jQuery(document).on("focus", "*", function(e) {
@@ -105,8 +128,8 @@ jQuery(function() {
 		}
 	});
 
-	jQuery(document).keydown(function(e) {
-		if (e.keyCode === 27) {
+	jQuery(document).keydown(function(event) {
+		if (event.keyCode === 27) {
 			if (jQuery(".for-drawer01").hasClass("is-checked")) {
 				jQuery(".for-drawer01").removeClass("is-checked");
 				jQuery("button.js-drawer").focus();
@@ -119,8 +142,8 @@ jQuery(function() {
 	if (userAgent.indexOf("iPhone") < 0 && userAgent.indexOf("Android") < 0) {
 		jQuery('a[href^="tel:"]')
 			.css("cursor", "default")
-			.on("click", function(e) {
-				e.preventDefault();
+			.on("click", function(event) {
+				event.preventDefault();
 			});
 	}
 });

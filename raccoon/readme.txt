@@ -4,7 +4,7 @@ Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-colors,
 Requires at least: 5.0.0
 Tested up to: WordPress 5.4.2
 Requires PHP: 7.3.5
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,10 @@ CSS Design Changes
 Add Font Awesome
 Add object-fit Polyfill
 rem to px
+
+= 1.3 =
+Color Customizable
+Add a second layer of the menu
 
 == Copyright ==
 

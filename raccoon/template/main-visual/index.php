@@ -1,6 +1,8 @@
 <?php
 /**
  * Main Visual
+ *
+ * @package Raccoon
  */
 
 ?>

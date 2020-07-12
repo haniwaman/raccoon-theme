@@ -6,8 +6,8 @@
 
 	a {
 		display: block;
-		color: map-get($floating, "color"); /* floating color */
-		background: map-get($floating, "background"); /* floating background */
+		color: map-get($floating, "color");
+		background: map-get($floating, "background");
 		text-decoration: none;
 		transition: all 0.3s ease 0s;
 		text-align: center;
@@ -23,7 +23,7 @@
 		}
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 

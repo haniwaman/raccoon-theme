@@ -1,6 +1,8 @@
 <?php
 /**
  * Footer Meta
+ *
+ * @package Raccoon
  */
 
 ?>

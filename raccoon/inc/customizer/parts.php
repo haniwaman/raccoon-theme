@@ -1,14 +1,16 @@
 <?php
 /**
  * Raccoon Customizer Parts
+ *
+ * @package Raccoon
  */
 
 if ( ! function_exists( 'raccoon_customize_parts' ) ) {
 
 	/**
-	 * Add Customizer Layout
+	 * Add Customize Layout
 	 *
-	 * @param object $wp_customize Customizer Object.
+	 * @param object $wp_customize Customize Object.
 	 * @return void
 	 */
 	function raccoon_customize_parts( $wp_customize ) {

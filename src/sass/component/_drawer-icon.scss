@@ -1,0 +1,75 @@
+.c-drawer-icon {
+	display: inline-block;
+	position: relative;
+	z-index: map-get($layer, "drawer") + 1;
+	text-align: center;
+	cursor: pointer;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+
+	&::after {
+		content: "MENU";
+		display: block;
+		color: $drawer-text-color;
+		font-size: 8px;
+		text-align: center;
+		font-weight: 700;
+		line-height: 1;
+		margin-top: 6px;
+	}
+
+	&.is-checked {
+		&::after {
+			content: "CLOSE";
+		}
+	}
+}
+
+.c-drawer__bars {
+	display: inline-block;
+	width: $drawer-bar-width;
+	height: $drawer-bar-height + ($drawer-bar-space + $drawer-bar-height) * 2;
+	position: relative;
+	vertical-align: bottom;
+}
+
+.c-drawer__bar {
+	position: absolute;
+	right: 0;
+	left: 0;
+	display: block;
+	background-color: $drawer-bar-color;
+	width: 100%;
+	height: $drawer-bar-height;
+	border-radius: 2px;
+	transition: all 0.3s linear 0s;
+
+	&:nth-of-type(1) {
+		top: 0;
+	}
+
+	&:nth-of-type(2) {
+		top: $drawer-bar-space + $drawer-bar-height;
+	}
+
+	&:nth-of-type(3) {
+		top: ($drawer-bar-space + $drawer-bar-height) * 2;
+	}
+
+	.is-checked & {
+		&:nth-of-type(1) {
+			top: 10px;
+			transform: rotate(-45deg);
+		}
+
+		&:nth-of-type(2) {
+			background-color: transparent;
+		}
+
+		&:nth-of-type(3) {
+			top: 10px;
+			transform: rotate(45deg);
+		}
+	}
+}

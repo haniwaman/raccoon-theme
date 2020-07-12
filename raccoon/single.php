@@ -1,6 +1,8 @@
 <?php
 /**
  * Single
+ *
+ * @package Raccoon
  */
 
 get_header(); ?>
@@ -25,6 +27,7 @@ if ( have_posts() ) :
 		?>
 
 		<?php get_template_part( 'template/content/single' ); ?>
+		<?php get_template_part( 'parts/pager-page' ); ?>
 
 		<?php
 endwhile;

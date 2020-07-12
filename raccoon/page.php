@@ -1,6 +1,8 @@
 <?php
 /**
  * Page
+ *
+ * @package Raccoon
  */
 
 get_header(); ?>

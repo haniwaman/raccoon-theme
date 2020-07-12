@@ -1,6 +1,8 @@
 <?php
 /**
  * Raccoon template tags Functions
+ *
+ * @package Raccoon
  */
 
 if ( ! function_exists( 'raccoon_get_post_categories' ) ) {

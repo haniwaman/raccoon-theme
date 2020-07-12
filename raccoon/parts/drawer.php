@@ -1,24 +1,18 @@
 <?php
 /**
  * Drawer
+ *
+ * @package Raccoon
  */
 
 ?>
 
-<!-- c-drawer -->
 <div class="c-drawer">
-	<button class="c-drawer__icon js-drawer for-drawer01" data-target="for-drawer01">
-		<div class="c-drawer__bars">
-				<span class="c-drawer__bar"></span>
-				<span class="c-drawer__bar"></span>
-				<span class="c-drawer__bar"></span>
-		</div><!-- /c-drawer__bars -->
-	</button><!-- /c-drawer__icon -->
-	<div class="c-drawer__close for-drawer01" data-target="for-drawer01"></div>
+	<div class="c-drawer__close for-drawer01 js-drawer" data-target="for-drawer01"></div>
 	<div class="c-drawer__content for-drawer01 c-drawer__content--left">
-	<?php if ( is_active_sidebar( 'spmenu' ) ) : ?>
+	<?php if ( is_active_sidebar( 'sp-menu' ) ) : ?>
 		<div class="p-drawer-widget">
-			<?php dynamic_sidebar( 'spmenu' ); ?>
+			<?php dynamic_sidebar( 'sp-menu' ); ?>
 		</div><!-- /p-drawer-widget -->
 	<?php else : ?>
 		<?php if ( has_nav_menu( 'header' ) ) : ?>
@@ -26,7 +20,7 @@
 			wp_nav_menu(
 				array(
 					'container'       => false,
-					'depth'           => 1,
+					'depth'           => 2,
 					'theme_location'  => 'header',
 					'container'       => 'nav',
 					'container_class' => 'p-drawer-nav',
@@ -38,7 +32,7 @@
 			wp_nav_menu(
 				array(
 					'container'       => false,
-					'depth'           => 1,
+					'depth'           => 2,
 					'container'       => 'nav',
 					'container_class' => 'p-drawer-nav',
 				)

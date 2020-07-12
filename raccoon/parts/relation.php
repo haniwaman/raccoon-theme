@@ -1,6 +1,8 @@
 <?php
 /**
  * Relation
+ *
+ * @package Raccoon
  */
 
 ?>
@@ -48,11 +50,11 @@
 
 </div><!-- /p-relation-entry__item -->
 	<?php endwhile; ?>
-<div class="p-relation__btn">
-<a class="c-button" href="<?php echo esc_url( get_category_link( get_the_category()[0]->cat_ID ) ); ?>"><?php esc_html_e( 'More Relation Posts', 'raccoon' ); ?></a>
-</div><!-- /p-relation__btn -->
 </div><!-- /p-relation__entries -->
-	<?php else: ?>
+<div class="p-relation__btn">
+	<a class="c-button" href="<?php echo esc_url( get_category_link( get_the_category()[0]->cat_ID ) ); ?>"><?php esc_html_e( 'More Relation Posts', 'raccoon' ); ?></a>
+</div><!-- /p-relation__btn -->
+	<?php else : ?>
 			<p class="p-relation__no-entry">関連記事はありません。</p>
 	<?php endif; ?>
 	<?php wp_reset_postdata(); ?>

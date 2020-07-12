@@ -1,6 +1,8 @@
 <?php
 /**
  * Comment
+ *
+ * @package Raccoon
  */
 
 if ( post_password_required() || ! comments_open() ) {

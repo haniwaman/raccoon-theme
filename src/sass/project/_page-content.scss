@@ -102,7 +102,7 @@
 	}
 
 	th {
-		background: $table-th-background; /* table border */
+		background: $table-th-background;
 	}
 
 	strong,
@@ -116,7 +116,7 @@
 		transition: all 0.3s ease 0s;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 

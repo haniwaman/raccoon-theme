@@ -1,18 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-04-12 18:41+0900\n"
+"POT-Creation-Date: 2020-07-11 17:57+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_001\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_attr_e\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_attr_e;_n;esc_html__;"
+"esc_attr__\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: sass\n"
@@ -21,15 +22,15 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-4: img\n"
 "X-Poedit-SearchPathExcluded-5: css\n"
 
-#: 404.php:26
+#: 404.php:27
 msgid "Contents is not found."
 msgstr "コンテンツが存在しません。"
 
-#: 404.php:33
+#: 404.php:34
 msgid "Sorry. Contents is not found."
 msgstr "申し訳ございません。コンテンツが存在しません。"
 
-#: 404.php:35
+#: 404.php:36
 msgid "Back to Home"
 msgstr "トップへ戻る"
 
@@ -37,181 +38,188 @@ msgstr "トップへ戻る"
 msgid "URL of this attachment"
 msgstr "この貼付ファイルのURLを開く"
 
-#: comments.php:14
+#: comments.php:16
 msgid "Comments"
 msgstr "コメント"
 
-#: comments.php:33
+#: comments.php:35
 msgid "Prev Comments"
 msgstr "前のコメント"
 
-#: comments.php:34
+#: comments.php:36
 msgid "Next Comments"
 msgstr "次のコメント"
 
-#: functions.php:125
+#: functions.php:131
 msgid "Header"
 msgstr "ヘッダーメニュー"
 
-#: functions.php:141
+#: functions.php:147
 msgid "Sidebar"
 msgstr "サイドバー"
 
-#: functions.php:151
+#: functions.php:157
 msgid "Sticky"
 msgstr "追従"
 
-#: functions.php:161
+#: functions.php:167
 msgid "Smartphone Menu"
 msgstr "スマホメニュー"
 
-#: functions.php:203 functions.php:245
+#: functions.php:209 functions.php:251
 msgid "Blog"
 msgstr "ブログ"
 
-#: functions.php:205 template/content/single.php:86
-#: template/content/single.php:105
-msgid "..."
-msgstr "…"
-
-#: functions.php:226 inc/breadcrumb.php:90
-msgid " Search Results"
+#: functions.php:232 inc/breadcrumb.php:92
+msgid " of Search Results"
 msgstr " の検索結果"
 
-#: functions.php:236 inc/breadcrumb.php:136
+#: functions.php:242 inc/breadcrumb.php:138
 msgid "Year"
 msgstr "年"
 
-#: functions.php:239 inc/breadcrumb.php:139
+#: functions.php:245 inc/breadcrumb.php:141
 msgid "Month"
 msgstr "月"
 
-#: functions.php:242 inc/breadcrumb.php:142
+#: functions.php:248 inc/breadcrumb.php:144
 msgid "Day"
 msgstr "日"
 
-#: functions.php:259
+#: functions.php:265
 msgid ""
 "This content is password protected. Enter your password below to view it."
 msgstr ""
-"このコンテンツはパスワードで保護されています。閲覧するには以下にパスワー"
-"ドを入力してください。"
+"このコンテンツはパスワードで保護されています。下記にパスワードを入力して"
+"ください。"
 
-#: functions.php:261
+#: functions.php:267
 msgid "Enter Password"
 msgstr "パスワードを入力してください"
 
-#: functions.php:262
+#: functions.php:268
 msgid "Confirm"
-msgstr "確認する"
+msgstr "確定"
 
-#: inc/breadcrumb.php:18
+#: inc/breadcrumb.php:20
 msgid "Home"
 msgstr "ホーム"
 
-#: inc/customizer/layout.php:18
+#: inc/customizer/color.php:30
+msgid "Site Color"
+msgstr "サイト色"
+
+#: inc/customizer/color.php:51
+msgid "Accent Color"
+msgstr "アクセント色"
+
+#: inc/customizer/color.php:72
+msgid "Text Color"
+msgstr "テキスト色"
+
+#: inc/customizer/color.php:93
+msgid "Footer Background Color"
+msgstr "フッター背景色"
+
+#: inc/customizer/layout.php:20
 msgid "Layout"
 msgstr "レイアウト"
 
-#: inc/customizer/layout.php:27
+#: inc/customizer/layout.php:29
 msgid "Site"
-msgstr "サイト全体"
+msgstr "サイト"
 
-#: inc/customizer/layout.php:45
+#: inc/customizer/layout.php:47
 msgid "Select Column"
 msgstr "レイアウトを選択する"
 
-#: inc/customizer/layout.php:51
+#: inc/customizer/layout.php:53
 msgid "One Column"
 msgstr "1カラム"
 
-#: inc/customizer/layout.php:52
+#: inc/customizer/layout.php:54
 msgid "Two Column(Side Right)"
 msgstr "2カラム（サイドメニュー右）"
 
-#: inc/customizer/layout.php:53
+#: inc/customizer/layout.php:55
 msgid "Two Column(Side Left)"
 msgstr "2カラム（サイドメニュー左）"
 
-#: inc/customizer/layout.php:63
+#: inc/customizer/layout.php:65
 msgid "Archive"
 msgstr "一覧"
 
-#: inc/customizer/layout.php:81
+#: inc/customizer/layout.php:83
 msgid "Archive Layout"
 msgstr "一覧のレイアウト"
 
-#: inc/customizer/layout.php:87
+#: inc/customizer/layout.php:89
 msgid "Horizon"
 msgstr "横並び"
 
-#: inc/customizer/layout.php:88
+#: inc/customizer/layout.php:90
 msgid "Vertical"
 msgstr "縦並び"
 
-#: inc/customizer/layout.php:98
+#: inc/customizer/layout.php:100
 msgid "Article"
 msgstr "記事"
 
-#: inc/customizer/parts.php:21
+#: inc/customizer/parts.php:23
 msgid "Single"
 msgstr "投稿"
 
-#: inc/customizer/parts.php:29
+#: inc/customizer/parts.php:31
 msgid "Contents"
 msgstr "コンテンツ"
 
-#: inc/customizer/parts.php:46
+#: inc/customizer/parts.php:48
 msgid "Heading Pattern"
 msgstr "見出しパターン"
 
-#: inc/customizer/parts.php:52
+#: inc/customizer/parts.php:54
 msgid "Default"
 msgstr "標準"
 
-#: inc/customizer/parts.php:53
+#: inc/customizer/parts.php:55
 msgid "Pattern01"
 msgstr "パターン01"
 
-#: inc/customizer/parts.php:63
+#: inc/customizer/parts.php:65
 msgid "Related Posts"
 msgstr "関連記事"
 
-#: inc/customizer/parts.php:82
+#: inc/customizer/parts.php:84
 msgid "Enable to Display"
 msgstr "表示する"
 
-#: inc/customizer/performance.php:21
+#: inc/customizer/performance.php:23
 msgid "Performance"
 msgstr "パフォーマンス"
 
-#: inc/customizer/performance.php:29
+#: inc/customizer/performance.php:31
 msgid "CSS Inline"
 msgstr "CSSインライン化"
 
-#: inc/customizer/performance.php:47
+#: inc/customizer/performance.php:49
 msgid "Enable to CSS Inline"
-msgstr "インライン化する"
+msgstr "CSSをインライン化する"
 
-#: parts/relation.php:11
+#: parts/relation.php:13
 msgid "Relation Posts"
 msgstr "関連記事"
 
-#: parts/relation.php:62
+#: parts/relation.php:54
 msgid "More Relation Posts"
 msgstr "関連記事をもっと見る"
 
-#: searchform.php:10
+#: searchform.php:11
 msgid "Search:"
 msgstr "検索:"
 
-#: searchform.php:11
+#: searchform.php:12
 msgid "Site Search"
 msgstr "サイト内検索"
-
-#: searchform.php:12
-msgid "Search"
-msgstr "検索"
 
 #: template/content/single.php:74
 msgid "Next Post"
@@ -221,117 +229,18 @@ msgstr "次の記事"
 msgid "Prev Post"
 msgstr "前の記事"
 
-#: template/footer/content.php:46
+#: template/footer/content.php:14
 msgid "Copyright"
-msgstr "Copyright"
+msgstr ""
 
-#: template/footer/content.php:46
+#: template/footer/content.php:14
 msgid "Y"
 msgstr ""
 
-#: template/footer/content.php:46
+#: template/footer/content.php:14
 msgid "All Rights Reserved."
-msgstr "All Rights Reserved."
+msgstr ""
 
-#: template/header/content.php:8
+#: template/header/content.php:10
 msgid "Skip to content"
 msgstr "コンテンツ部分へスキップする"
-
-#~ msgid "Footer"
-#~ msgstr "フッターメニュー"
-
-#~ msgid "Color"
-#~ msgstr "色"
-
-#~ msgid "Background Color"
-#~ msgstr "背景色"
-
-#~ msgid "Text Color"
-#~ msgstr "テキスト色"
-
-#~ msgid "Logo Color"
-#~ msgstr "ロゴ色"
-
-#~ msgid "Link"
-#~ msgstr "リンク"
-
-#~ msgid "iCatch Image"
-#~ msgstr "アイキャッチ画像"
-
-#~ msgid "iCatch Image is not set"
-#~ msgstr "アイキャッチ画像が存在しません"
-
-#~ msgid "Image"
-#~ msgstr "画像"
-
-#~ msgid "Color is not set"
-#~ msgstr "色が設定されていません"
-
-#~ msgid "Image is not set"
-#~ msgstr "画像が設定されていません"
-
-#~ msgid "SNS"
-#~ msgstr "SNS"
-
-#~ msgid "Twitter"
-#~ msgstr "Twitter"
-
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "Hatena Bookmark"
-#~ msgstr "はてなブックマーク"
-
-#~ msgid "LINE"
-#~ msgstr "LINE"
-
-#~ msgid "Pocket"
-#~ msgstr "Pocket"
-
-#~ msgid "RSS"
-#~ msgstr "RSS"
-
-#~ msgid "LikeBox"
-#~ msgstr "いいねボックス"
-
-#~ msgid "Text"
-#~ msgstr "テキスト"
-
-#~ msgid "Facebook Page URL"
-#~ msgstr "FacebookページURL"
-
-#~ msgid "SNS Share Button"
-#~ msgstr "SNSシェアボタン"
-
-#~ msgid "Button Type"
-#~ msgstr "ボタンの種類"
-
-#~ msgid "Place"
-#~ msgstr "ボタンの位置"
-
-#~ msgid "Category"
-#~ msgstr "カテゴリー"
-
-#~ msgid "Tag"
-#~ msgstr "タグ"
-
-#~ msgid "Term"
-#~ msgstr "ターム"
-
-#~ msgid "Select Image"
-#~ msgstr "画像を選択する"
-
-#~ msgid "Clear Image"
-#~ msgstr "画像をクリア"
-
-#~ msgid "Give it a thumbs up"
-#~ msgstr "このページが役に立ったら<br>いいね！お願いします"
-
-#~ msgid "Tweet"
-#~ msgstr "ツイート"
-
-#~ msgid "Share"
-#~ msgstr "シェア"
-
-#~ msgid "Hatena"
-#~ msgstr "はてブ"

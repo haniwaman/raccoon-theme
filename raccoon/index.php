@@ -1,6 +1,8 @@
 <?php
 /**
  * Index
+ *
+ * @package Raccoon
  */
 
 get_header(); ?>
@@ -21,13 +23,12 @@ get_header(); ?>
 	<?php
 	if ( have_posts() ) :
 		?>
-	<div class="p-archive-header">
+	<div class="p-archive-header l-primary__header">
 		<h1 class="p-archive-header__title"><?php the_archive_title(); ?></h1>
 		<div class="p-archive-header__description"><?php the_archive_description(); ?></div>
 		<div class="p-archive-header__form"><?php get_search_form(); ?></div>
 	</div><!-- /p-archive-header -->
 
-	<!-- p-entries -->
 		<?php
 		$entry_type_class = 'p-entries--square';
 		if ( 'horizon' === get_theme_mod( 'raccoon_layout_archive_check' ) ) {
@@ -37,7 +38,7 @@ get_header(); ?>
 		}
 
 		?>
-	<div class="p-entries <?php echo esc_attr( $entry_type_class ); ?>">
+	<div class="p-entries <?php echo esc_attr( $entry_type_class ); ?> l-primary__body">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -51,7 +52,7 @@ get_header(); ?>
 		</div><!-- /p-entries -->
 
 		<?php if ( paginate_links() ) : ?>
-		<div class="p-pagination">
+		<div class="p-pagination l-primary__footer">
 			<?php
 			echo wp_kses_post(
 				paginate_links(

@@ -1,6 +1,8 @@
 <?php
 /**
  * Header
+ *
+ * @package Raccoon
  */
 
 ?>

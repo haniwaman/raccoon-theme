@@ -1,14 +1,16 @@
 <?php
 /**
- * Raccoon Customizer Performance
+ * Raccoon Customize Performance
+ *
+ * @package Raccoon
  */
 
 if ( ! function_exists( 'raccoon_customize_performance' ) ) {
 
 	/**
-	 * Add Customizer Performance
+	 * Add Customize Performance
 	 *
-	 * @param object $wp_customize Customizer Object.
+	 * @param object $wp_customize Customize Object.
 	 * @return void
 	 */
 	function raccoon_customize_performance( $wp_customize ) {

@@ -37,13 +37,13 @@
 		transition: all 0.3s ease 0s;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 }
 
 .wp-calendar-nav {
-	margin-top: 6px;
+	padding: 3px;
 	display: flex;
 
 	.pad {
@@ -52,7 +52,7 @@
 
 .wp-calendar-nav-prev,
 .wp-calendar-nav-next {
-	padding: 0 2px;
+	padding: 0;
 	flex-grow: 1;
 }
 

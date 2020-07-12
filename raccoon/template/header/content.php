@@ -1,6 +1,8 @@
 <?php
 /**
  * Header Content
+ *
+ * @package Raccoon
  */
 
 ?>
@@ -30,7 +32,7 @@ $raccoon_logo_tag = is_front_page() ? 'h1' : 'div';
 	wp_nav_menu(
 		array(
 			'container'       => false,
-			'depth'           => 1,
+			'depth'           => 2,
 			'theme_location'  => 'header',
 			'container'       => 'nav',
 			'container_class' => 'p-header-nav',
@@ -42,7 +44,7 @@ $raccoon_logo_tag = is_front_page() ? 'h1' : 'div';
 	wp_nav_menu(
 		array(
 			'container'       => false,
-			'depth'           => 1,
+			'depth'           => 2,
 			'container'       => 'nav',
 			'container_class' => 'p-header-nav',
 		)
@@ -52,8 +54,16 @@ $raccoon_logo_tag = is_front_page() ? 'h1' : 'div';
 </div><!-- /l-header__global -->
 
 <div class="l-header__drawer">
-<?php get_template_part( 'parts/drawer' ); ?>
+	<button class="c-drawer-icon js-drawer for-drawer01" data-target="for-drawer01">
+		<div class="c-drawer__bars">
+				<span class="c-drawer__bar"></span>
+				<span class="c-drawer__bar"></span>
+				<span class="c-drawer__bar"></span>
+		</div><!-- /c-drawer__bars -->
+	</button><!-- /c-drawer__icon -->
 </div><!-- /l-header__drawer -->
 
 </div><!-- /l-inner -->
 </header><!-- /p-header -->
+
+<?php get_template_part( 'parts/drawer' ); ?>

@@ -7,17 +7,17 @@
 		font-weight: 700;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 
 	img {
 		vertical-align: middle;
 		width: auto;
-		max-height: $header-height-sp;
+		max-height: 100%;
 
 		@include mq-up("tab") {
-			max-height: $header-height-pc;
+			max-height: 100%;
 		}
 	}
 }

@@ -133,7 +133,7 @@
 		transition: all 0.3s ease 0s;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 
@@ -157,8 +157,8 @@
 	var,
 	code,
 	kbd {
-		color: map-get($code, "color"); /* code-txt */
-		background: map-get($code, "background"); /* code-bg */
+		color: map-get($code, "color");
+		background: map-get($code, "background");
 		display: inline-block;
 		padding-left: 0.2em;
 		padding-right: 0.2em;
@@ -173,7 +173,7 @@
 		padding: 1em;
 
 		code {
-			background: $pre-code-background; /* pre-code-bg */
+			background: $pre-code-background;
 			color: #fff;
 			padding: 12px;
 			position: relative;
@@ -185,7 +185,7 @@
 
 .comment-respond {
 	.required {
-		color: $form-color-required; /* cr-required */
+		color: $form-color-required;
 		vertical-align: middle;
 	}
 
@@ -217,7 +217,7 @@
 		transition: all 0.3s ease 0s;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 }
@@ -258,7 +258,7 @@
 			left: 0;
 			transform: translateY(-50%);
 			background: #fff;
-			border: 1px solid $form-border-color; /* form border */
+			border: 1px solid $form-border-color;
 			border-radius: 2px;
 			width: 1em;
 			height: 1em;
@@ -282,8 +282,8 @@
 			height: 0.6em;
 			margin-top: -0.2em;
 			display: block;
-			border-left: 4px solid $form-checkbox-color; /* form checkbox */
-			border-bottom: 4px solid $form-checkbox-color; /* form checkbox */
+			border-left: 4px solid $form-checkbox-color;
+			border-bottom: 4px solid $form-checkbox-color;
 			opacity: 1;
 		}
 	}

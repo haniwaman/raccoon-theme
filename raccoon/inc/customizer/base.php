@@ -1,6 +1,8 @@
 <?php
 /**
- * Raccoon Customizer Sanitize
+ * Raccoon Customize Sanitize
+ *
+ * @package Raccoon
  */
 
 if ( ! function_exists( 'raccoon_sanitize_checkbox' ) ) {
@@ -18,7 +20,7 @@ if ( ! function_exists( 'raccoon_sanitize_checkbox' ) ) {
 
 if ( ! function_exists( 'raccoon_sanitize_select' ) ) {
 	/**
-	 * Sanitize Radiobutton and Selectbox
+	 * Sanitize Radiobutton and SelectBox
 	 *
 	 * @param [type] $input .
 	 * @param [type] $setting .

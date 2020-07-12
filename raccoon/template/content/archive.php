@@ -1,11 +1,13 @@
 <?php
 /**
  * Archive Content
+ *
+ * @package Raccoon
  */
 
 ?>
 
-<div <?php post_class( array( 'p-entry' ) ); ?>>
+<div <?php post_class( array( 'p-entry', 'p-entries__item' ) ); ?>>
 
 	<div class="p-entry__img">
 		<div class="p-entry__img-cover">

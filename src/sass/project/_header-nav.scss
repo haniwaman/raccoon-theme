@@ -1,36 +1,57 @@
 .p-header-nav {
+	// 汎用的
 	ul {
 		display: flex;
-	}
 
-	li {
-		margin-right: 12px;
-		position: relative;
-		z-index: map-get($layer, "header") + 2;
-		padding: 16px 0;
+		li {
+			margin-right: 12px;
+			position: relative;
+			z-index: map-get($layer, "header") + 2;
+			padding: 16px 0;
 
-		&:last-child {
-			margin-right: 0;
+			&:last-child {
+				margin-right: 0;
 
-			.sub-menu {
-				left: auto;
-				right: 0;
+				.sub-menu {
+					left: auto;
+					right: 0;
+				}
+			}
+
+			> a {
+				text-decoration: none;
+				display: block;
+				padding: 6px 8px;
+				font-size: 14px;
+				transition: all 0.3s ease 0s;
+
+				&:hover {
+					opacity: $opacity;
+				}
 			}
 		}
+	}
 
-		> a {
-			text-decoration: none;
-			display: block;
-			padding: 6px 8px;
-			font-size: 14px;
-			transition: all 0.3s ease 0s;
+	// 第一階層
+	> ul {
+		> li {
+			&.menu-item-has-children {
+				> a {
+					&::after {
+						content: "\f0d7";
+						font-family: $font-family-awesome;
+						font-weight: 700;
+						margin-left: 10px;
+					}
+				}
+			}
 
-			&:hover {
-				opacity: $opacity; /* opacity */
-
-				+ .sub-menu {
-					visibility: visible;
-					opacity: 1;
+			&.m--button {
+				> a {
+					background: $color-key;
+					color: #fff;
+					padding: 0.4em 1.2em;
+					box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
 				}
 			}
 		}
@@ -61,13 +82,18 @@
 				display: block;
 				height: auto;
 				line-height: 1.6;
-				background: $header-background-sub; /* header background-sub */
-				color: $header-color-sub; /* header color-sub */
+				background: $header-background-sub;
+				color: $header-color-sub;
 				padding: 8px 28px 8px 16px;
 				font-size: 14px;
 				font-weight: 400;
 				letter-spacing: 0.05em;
 			}
+		}
+
+		&.is-show {
+			opacity: 1;
+			visibility: visible;
 		}
 	}
 }

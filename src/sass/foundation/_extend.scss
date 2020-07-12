@@ -2,7 +2,7 @@
 %button {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 0.3em 1.2em;
+	padding: 0.6em 1.2em;
 	margin: 0;
 	background-image: none;
 	background-color: $button-background;
@@ -28,7 +28,7 @@
 		}
 	}
 
-	&::-moz-foucus-inner {
+	&::-moz-focus-inner {
 		padding: 0;
 		border: none;
 	}
@@ -38,6 +38,7 @@
 %text {
 	width: auto;
 	padding: 0.4em 0.8em;
+	margin: 0;
 	border-radius: 0;
 	background-image: none;
 	background-color: #fff;
@@ -63,6 +64,7 @@
 	width: auto;
 	height: 100px;
 	padding: 0.4em 0.8em;
+	margin: 0;
 	border-radius: 0;
 	background-image: none;
 	background-color: #fff;
@@ -229,10 +231,107 @@
 	&[multiple] {
 		height: 100px;
 		padding: 0;
+		margin: 0;
 		background-image: none;
 
 		option {
 			padding: 0.4em 1.2em 0.4em 0.4em;
+		}
+	}
+}
+
+// メニューリスト
+%menu {
+	// 汎用的
+	ul {
+		padding: 0 $pd-x-widget;
+		font-size: 14px;
+
+		// 子階層
+		&.children,
+		&.sub-menu {
+			display: none;
+
+			li {
+				margin-top: 0;
+
+				@include mq-up("tab") {
+					margin-top: $pd-widget-li;
+				}
+
+				a {
+					font-size: 13px;
+				}
+			}
+		}
+
+		.m-open .sub-menu {
+			display: block;
+		}
+	}
+
+	// 第一階層
+	> ul,
+	.menu {
+		padding: $pd-y-widget $pd-x-widget;
+	}
+
+	li {
+		font-size: inherit;
+		position: relative;
+		margin-bottom: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include mq-up("tab") {
+			margin-bottom: $pd-widget-li;
+		}
+
+		// リスト内のリンク
+		a {
+			text-decoration: none;
+			display: block;
+			padding: 0.8em 24px 0.8em 0.8em;
+
+			@include mq-up("tab") {
+				padding: 0;
+				display: inline-block;
+			}
+		}
+
+		// アローアイコン
+		button {
+			cursor: pointer;
+			border: none;
+			background-image: none;
+			background-color: transparent;
+			appearance: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			right: 8px;
+			top: 11px;
+
+			@include mq-up("tab") {
+				top: 5px;
+			}
+
+			&::after {
+				content: "\f078";
+				font-family: $font-family-awesome;
+				font-size: 14px;
+				font-weight: 900;
+			}
+		}
+
+		&.m-open {
+			button {
+				&::after {
+					content: "\f077";
+				}
+			}
 		}
 	}
 }

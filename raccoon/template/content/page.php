@@ -1,6 +1,8 @@
 <?php
 /**
  * Page Content
+ *
+ * @package Raccoon
  */
 
 ?>
@@ -27,7 +29,7 @@
 		<?php
 		wp_link_pages(
 			array(
-				'before'         => '<nav class="p-page-links">',
+				'before'         => '<nav class="p-page-links l-page__links">',
 				'after'          => '</nav>',
 				'link_before'    => '',
 				'link_after'     => '',

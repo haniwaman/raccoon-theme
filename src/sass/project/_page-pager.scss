@@ -1,6 +1,4 @@
 .p-page-pager {
-	margin-top: 32px;
-
 	@include mq-up("tab") {
 		display: flex;
 		flex-direction: row-reverse;
@@ -21,7 +19,7 @@
 	}
 
 	&:hover {
-		opacity: $opacity; /* opacity */
+		opacity: $opacity;
 	}
 }
 

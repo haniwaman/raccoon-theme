@@ -1,6 +1,5 @@
 .p-entry {
 	border: 1px solid #eee;
-	margin-bottom: 32px;
 	background: #fff;
 	text-decoration: none;
 	padding: 12px;
@@ -10,29 +9,12 @@
 		padding: 24px 12px;
 	}
 
-	&:last-child {
-		margin-bottom: 0;
-	}
-
 	.p-entries--square & {
 		display: block;
-		margin-right: 0;
-		margin-bottom: 32px;
-		width: 100%;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
 
 		@include mq-up("tab") {
-			margin-right: 32px;
 			padding-left: 24px;
 			padding-right: 24px;
-			width: calc(50% - 32px / 2);
-
-			&:nth-child(2n) {
-				margin-right: 0;
-			}
 		}
 	}
 }
@@ -69,7 +51,7 @@
 		height: 100%;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 
 		img {
@@ -135,7 +117,7 @@
 		text-decoration: none;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 }
@@ -151,7 +133,7 @@
 		text-decoration: none;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 }
@@ -177,7 +159,7 @@
 		transition: all 0.3s ease 0s;
 
 		&:hover {
-			opacity: $opacity; /* opacity */
+			opacity: $opacity;
 		}
 	}
 

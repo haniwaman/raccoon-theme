@@ -1,6 +1,8 @@
 <?php
 /**
  * Attachment
+ *
+ * @package Raccoon
  */
 
 get_header(); ?>
