@@ -344,7 +344,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: monospace, sans-serif;
+	font-family: Monaco, monospace, sans-serif;
 	font-size: inherit;
 }
 
@@ -522,6 +522,7 @@ select {
 }
 
 .l-secondary__fixed {
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
 	position: -webkit-sticky;
 	position: sticky;
 	top: 32px;
@@ -1379,7 +1380,7 @@ select {
 .p-entry__title {
 	font-size: 20px;
 	font-weight: 700;
-	line-height: 1.2;
+	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
@@ -1633,6 +1634,59 @@ select {
 	color: #9e9e9e;
 }
 
+.p-information {
+	width: 100%;
+}
+
+.p-information__link a {
+	background: #efa336;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 8px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.p-like-box {
+	background: #2d2d2d;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+	display: flex;
+	margin-top: 32px;
+}
+
+.p-like-box__img {
+	background: transparent no-repeat center center / auto 100%;
+	width: 40%;
+}
+
+.p-like-box__img img {
+	-o-object-fit: cover;
+	font-family: "object-fit: cover;";
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.p-like-box__body {
+	padding: 10px 4px;
+	text-align: center;
+}
+
+.p-like-box__lead {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.6;
+	margin-bottom: 8px;
+}
+
+.p-like-box__content {
+	font-size: 12px;
+	margin-top: 12px;
+}
+
 .p-main-visual {
 	background: #9e9e9e;
 	min-height: 300px;
@@ -1858,7 +1912,7 @@ select {
 	background: #fee;
 	box-shadow: 0 0 0 1px #fee;
 	color: #444;
-	font-family: monospace, sans-serif;
+	font-family: Monaco, monospace, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	margin: 0 0.1em;
@@ -1881,7 +1935,7 @@ select {
 	background: #2d2d2d;
 	color: #fff;
 	display: block;
-	font-family: monospace, sans-serif;
+	font-family: Monaco, monospace, sans-serif;
 	font-weight: 400;
 	margin: -1em;
 	overflow: auto;
@@ -2857,6 +2911,25 @@ span.wpcf7-list-item {
 
 .p-header-logo img {
 	max-height: 100%;
+}
+
+.p-like-box__img {
+	background: transparent no-repeat center center / cover;
+}
+
+.p-like-box__body {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.p-like-box__lead {
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.p-like-box__content {
+	font-size: 14px;
+	margin-top: 16px;
 }
 
 .p-page-pager {

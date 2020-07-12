@@ -51,6 +51,10 @@ rem to px
 Color Customizable
 Add a second layer of the menu
 
+= 1.3.2 =
+add Shadow Sidebar Fixed Area
+Code Font is "Monaco"
+
 == Copyright ==
 
 Raccoon WordPress Theme, Copyright 2019 WordPress.org
